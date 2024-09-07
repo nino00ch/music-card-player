@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Caveat", cursive;
+}
+.MusicImg {
+  width: 154px;
+  height: 154px;
+  border-radius: 50%;
+  position: relative;
+  box-shadow: 10px 20px 20px rgba(76, 19, 113, 0.3);
+}
+.player {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  padding: 40px;
+  width: 300px;
+  height: 400px;
+  border-radius: 20px;
+  box-shadow: 10px 20px 20px rgb(75, 19, 113);
+}
+.control-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  top: 5px;
+  padding: 10px;
+  border-radius: 25px;
+  transition: background-color 0.3s;
+  margin-top: 15px;
+}
+.control-btn:hover {
+  background-color: rgba(75, 19, 113, 0.532);
+}
+.progress-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  color: gray;
+  font-family: Arial, sans-serif;
+}
+.time-display {
+  font-size: 14px;
+  width: 40px;
+  text-align: center;
+}
+.progress-bar {
+  position: relative;
+  flex: 1;
+  height: 5px;
+  background-color: #333;
+  margin: 0 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.progress {
+  height: 100%;
+  background-color: rgba(137, 43, 226, 0.658);
+  width: 0%;
+  border-radius: 5px;
+}
+.player-option h2 {
+  margin-bottom: 10px;
+
+  color: rgba(137, 43, 226, 0.658);
+}
+.player-option p {
+  margin-bottom: 20px;
+  color: gray;
+}
